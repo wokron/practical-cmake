@@ -8,5 +8,5 @@ add_subdirectory(add)
 add_subdirectory(fibo)
 add_subdirectory(test)
 
-add_executable(main main.cpp)
-target_link_libraries(main PRIVATE add fibo)
+add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE add fibo)
